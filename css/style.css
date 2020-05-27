@@ -7,11 +7,14 @@
 
 :root {
   /*COLOR*/
-  --primary-color: black;
-  --secondary-color: #4bb84a;
+  --main-color: #099d8d;
+  --secondary-color: #14d9c4;
   --light-color: white;
+  --main-text-color: #54585a;
+  --secondary-text-color: #b8b8b9;
+  --heading-color: black;
+
   /* FONTS */
-  --primary-font: Circular, Helvetica, Arial, Helvetica, sans-serif;
 }
 
 div {
