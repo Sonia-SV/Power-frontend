@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  /*COLOR*/
+  --primary-color: black;
+  --secondary-color: #4bb84a;
+  --light-color: white;
+  /* FONTS */
+  --primary-font: Circular, Helvetica, Arial, Helvetica, sans-serif;
+}
+
 div {
   border: 2px solid blue;
 }
@@ -6,4 +22,8 @@ header {
 }
 footer {
   border: 2px solid purple;
+}
+.fab,
+.fas {
+  color: #099d8d;
 }
