@@ -18,6 +18,7 @@
 
   /* FONTS */
   --primary-font: "Open Sans", sans-serif;
+  --primary-font-bold: "Open Sans", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
 /* header {
@@ -31,6 +32,8 @@
   display: flex;
   flex-wrap: wrap;
   z-index: 999;
+  position: fixed;
+  top: 0;
 }
 .teamName {
   background-color: var(--main-color);
@@ -58,12 +61,43 @@
   display: inline-block;
 }
 
-/* border: 2px solid black; */
+.hero {
+  height: 421px;
+  width: 320px;
+  background-image: url("https://placekitten.com/320/421");
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+}
+
+div .claim {
+  height: 80px;
+  width: 290px;
+  position: relative;
+  top: 300px;
+}
+.claim {
+  font-family: var(--primary-font-bold);
+  font-size: 12px;
+  background-color: var(--light-color);
+  padding: 14px 15px 16px 15px;
+}
+
+#team {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+.strengthBlocks {
+  display: flex;
+  flex-direction: column;
+}
 .footer {
 }
 .fab,
 .fas {
-  color: #099d8d;
+  color: var(--main-color);
 }
 .teamBlock {
   background-color: var(--light-color);
@@ -75,27 +109,8 @@ body {
   max-width: 768px;
 }
 
-.hero {
-  height: 421px;
-  width: 320px;
-  background-image: url("https://placekitten.com/320/421");
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-#team {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
-}
-.strengthBlocks {
-  display: flex;
-  flex-direction: column;
-}
-
 .h3 {
-  color: (var --main-color);
+  color: var(--main-color);
   box-sizing: 290px, 45px;
   display: flex;
   justify-content: center;
