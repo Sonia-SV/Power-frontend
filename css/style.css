@@ -15,7 +15,7 @@
   --main-text-color: #54585a;
   --secondary-text-color: #b8b8b9;
   --heading-color: black;
-
+  --background-color: #0b1754;
   /* FONTS */
   --primary-font: "Open Sans", sans-serif;
   --primary-font-bold: "Open Sans", sans-serif;
@@ -64,7 +64,11 @@
 .hero {
   height: 421px;
   width: 320px;
-  background-image: url("https://placekitten.com/320/421");
+  background-image: url(/img/PowerRangerSinLogo.jpg);
+  background-size: auto 60%;
+  background-position: center;
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
   z-index: 3;
   display: flex;
   justify-content: center;
