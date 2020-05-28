@@ -15,14 +15,13 @@
   --heading-color: black;
 
   /* FONTS */
-  --primary-font: "Open Sans", sans-serif;
-  --heading-font: Rubik;
 }
+
 div {
   border: 2px solid blue;
 }
 header {
-  border: 1px solid red;
+  border: 2px solid purple;
 }
 footer {
   border: 2px solid purple;
@@ -32,14 +31,10 @@ footer {
   color: #099d8d;
 }
 .teamBlock {
-  background-color: var(--light-color);
-  font-family: var(--primary-font);
+  background-color: (var--light-color: white);
+  width: 320px;
+  height: 504px;
 }
-
-body {
-  max-width: 768px;
-}
-
 #team {
   display: flex;
   justify-content: center;
@@ -47,12 +42,14 @@ body {
 }
 .strengthBlocks {
   background-color: brown;
+  width: 320px;
+  height: 225px;
   display: flex;
   flex-direction: column;
 }
 
 .h3 {
-  color: (var --main-color);
+  color: (var --main-color: #099d8d);
   box-sizing: 290px, 45px;
   display: flex;
   justify-content: center;
@@ -69,6 +66,8 @@ body {
   justify-content: center;
 }
 .aboutUsBlock {
+  width: 320px;
+  height: ;
   background-color: darkgreen;
 }
 #aboutUs {
@@ -81,14 +80,4 @@ body {
 }
 .picAna {
   background-color: firebrick;
-}
-
-.socialMedia li {
-  display: inline;
-}
-
-.socialMedia li:after {
-  padding: 10px;
-  content: "·";
-  font-weight: bolder;
 }
