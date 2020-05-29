@@ -3,8 +3,16 @@
   color: inherit;
   list-style-type: none;
   text-decoration: none;
-  margin: 0;
   padding-inline-start: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
 }
 
 :root {
@@ -21,9 +29,6 @@
   --primary-font-bold: "Open Sans", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
-/* header {
-  border: 1px solid red;
-} */
 
 .top {
   font-family: var(--secondary-font);
@@ -37,19 +42,18 @@
 }
 .teamName {
   background-color: var(--main-color);
-  font-size: 16px;
+  font-size: 1rem;
   height: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.95;
-  /* border: 2px solid black; */
 }
 
 .menuItems {
   background-color: var(--secondary-color);
-  font-size: 15px;
+  font-size: 0.938rem;
   height: 45px;
   width: 100%;
   display: flex;
@@ -76,26 +80,32 @@
 }
 
 div .claim {
-  height: 80px;
   width: 290px;
   position: relative;
   top: 300px;
 }
 .claim {
   font-family: var(--primary-font-bold);
-  font-size: 12px;
+  font-size: 1.125rem;
   background-color: var(--light-color);
-  padding: 14px 15px 16px 15px;
+  padding: 10px 15px 16px 15px;
 }
 
 #team {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
 }
+
 .strengthBlocks {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: #f1f1f1;
 }
 .footer {
 }
@@ -107,36 +117,104 @@ div .claim {
   background-color: var(--light-color);
   font-family: var(--primary-font);
   width: 320px;
+  margin: ;
+}
+/* margenes superior/inferior
+1.875rem  1.875rem  */
+
+.teamBlock p {
+  margin-right: 0.938rem;
+  margin-left: 0.938rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color: var(--main-text-color);
+  line-height: 1.5rem;
 }
 
 body {
   max-width: 768px;
 }
-
-.h3 {
+.strengthBlocks h3 {
   color: var(--main-color);
+  font-size: 1.375 rem;
   box-sizing: 290px, 45px;
   display: flex;
   justify-content: center;
+  font-family: var(--secondary-font);
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
 }
+
 .strengths {
   box-sizing: 15px, 1046px, 290px, 192px;
   display: flex;
   flex-direction: column;
-}
-.weakness {
-  display: flex;
   justify-content: center;
 }
+
+.strengths h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
+}
+.weakness h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;}
+
+.weakness {
+  box-sizing: 15px, 1046px, 290px, 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .aboutUsBlock {
+  width: 320px;
 }
 #aboutUs {
   display: flex;
   justify-content: center;
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
+  
+}
+.aboutUsBlock h4 {
+  font-size: 1.25rem;
+  font-family: var(--primary-font);
+  color: var(--heading-color);
+}
+
+.aboutUsBlock p {
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color: var(--main-text-color);
+  text-align: center;
+  margin-right: 0.938rem;
+  margin-left: 0.938rem;
+  line-height: 1.5rem;
 }
 .teamplayer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.picAna {
+
+.bioBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMedia ul,
+.names {
+  display: flex;
+  justify-content: center;
 }
 
 .socialMedia li {
@@ -147,4 +225,5 @@ body {
   padding: 10px;
   content: "·";
   font-weight: bolder;
+}
 }
