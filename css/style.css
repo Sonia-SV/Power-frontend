@@ -76,22 +76,25 @@ ul {
   z-index: 3;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
-div .claim {
-  width: 290px;
-  height: 80px;
-  top: 300px;
+.hero div {
+  display: flex;
   margin: auto;
   position: relative;
-  display: flex;
+  align-items: center;
+  top: 35%;
+  flex-direction: row;
+  width: 290px;
+  height: 80px;
+  background-color: var(--light-color);
 }
-
 .claim {
   font-family: var(--primary-font-bold);
   font-size: 1.125rem;
   background-color: var(--light-color);
-  padding: 10px 15px 16px 15px;
+  padding-left: 25px;
 }
 
 #team {
@@ -207,6 +210,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border: solid 1px red;
 }
 
 .pic img {
@@ -217,6 +221,11 @@ body {
 .bioBlock {
   display: flex;
   flex-direction: column;
+}
+
+.socialMedia {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .socialMedia ul,
