@@ -76,14 +76,17 @@ ul {
   z-index: 3;
   display: flex;
   justify-content: center;
-  /* align-items: flex-end; */
 }
 
 div .claim {
   width: 290px;
-  position: relative;
+  height: 80px;
   top: 300px;
+  margin: auto;
+  position: relative;
+  display: flex;
 }
+
 .claim {
   font-family: var(--primary-font-bold);
   font-size: 1.125rem;
@@ -204,6 +207,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.pic img {
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
 }
 
 .bioBlock {
