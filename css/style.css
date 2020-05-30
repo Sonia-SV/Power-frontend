@@ -71,7 +71,7 @@ ul {
   background-image: url(/img/power_ranger.png);
   background-size: auto 60%;
   background-position: center;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   background-repeat: no-repeat;
   z-index: 3;
   display: flex;
@@ -84,7 +84,7 @@ ul {
   margin: auto;
   position: relative;
   align-items: center;
-  top: 35%;
+  top: 50%;
   flex-direction: row;
   width: 290px;
   height: 80px;
@@ -112,6 +112,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   background-color: #f1f1f1;
+  margin-top: 25px;
+  padding-bottom: 25px;
 }
 
 .fab,
@@ -120,11 +122,11 @@ ul {
 }
 
 .teamBlock {
+  margin-top: 70px;
   background-color: var(--light-color);
-
   width: 320px;
-  /* margin: ; */
 }
+
 /* margenes superior/inferior
 1.875rem  1.875rem  */
 
@@ -208,9 +210,9 @@ body {
 }
 .teamplayer {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  border: solid 1px red;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .pic img {
@@ -232,6 +234,8 @@ body {
 .names {
   display: flex;
   justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .socialMedia li {
