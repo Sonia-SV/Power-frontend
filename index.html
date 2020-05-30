@@ -25,9 +25,11 @@
       <nav class="top">
         <h2 class="teamName"><a href="#">POWER FRONTEND</a></h2>
         <ul class="menuItems">
-          <li><a href="#team">EQUIPO</a></li>
-          <li><a href="#aboutUs">QUIÉNES SOMOS</a></li>
-          <li><a href="contact">CONTACTO</a></li>
+          <li><a href="#team" title="Ir a Equipo">EQUIPO</a></li>
+          <li>
+            <a href="#aboutUs" title="Ir a Quiénes somos">QUIÉNES SOMOS</a>
+          </li>
+          <li><a href="contact" title="Ir a Contacto">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
@@ -56,12 +58,12 @@
             legendarios lenguajes de programación.
           </p>
           <p>
-            A estas anónimas programadoras las conocemos como las
+            A estas anónimas programadoras las conocemos como las<br />
             <strong>Power Front-End</strong>.
           </p>
         </div>
-
         <div class="strengthBlocks">
+          <div class="rectangle"></div>
           <article class="strengths">
             <h3>Fortalezas</h3>
             <p>
@@ -96,11 +98,11 @@
             <div class="names"><h4>Ana María Caruntu</h4></div>
             <div class="bio">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                rutrum ullamcorper mauris, vel convallis metus eleifend in. Cras
-                hendrerit at ante eget auctor. Cras hendrerit at ante eget
-                auctor. Cras hendrerit at ante eget auctor. Cras Cras hendrerit
-                at ante.
+                Soy Ana Caruntu. Me recordaréis por taquillazos como “HTML V”,
+                el multi galardonado “Código a muerte en Torremolinos” o por ser
+                el Power Ranger rojo en la mítica serie. Me gustan los dulces,
+                los salaos y los gatitos. Con mi toque y mi "style" tu web se
+                adaptará a cualquier formato.
               </p>
             </div>
 
@@ -110,6 +112,7 @@
                   <!--TODO: twitter de Ana-->
                   <a
                     class="fab fa-twitter"
+                    title="Ir a Twitter"
                     href="http://www.twitter.com/perfiltwitter"
                     title="Twitter"
                   >
@@ -118,6 +121,7 @@
                 <li>
                   <a
                     class="fab fa-linkedin-in"
+                    title="Ir a Linkedin"
                     href="http://www.linkedin.com/perfilLinkedin"
                     title="Linkedin"
                   >
@@ -126,6 +130,7 @@
                 <li>
                   <a
                     class="fab fa-github-alt"
+                    title="Ir a Github"
                     href="https://github.com/anamcaruntu"
                     title="Github"
                   >
@@ -134,6 +139,7 @@
                 <li>
                   <a
                     class="fas fa-envelope"
+                    title="Enviar E-mail"
                     href="mailto:correo@gmail.com"
                     title="Email"
                   >
@@ -371,7 +377,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Power FrontEnd ©2020</p>
       <nav>
         <ul>
@@ -380,7 +386,9 @@
           <li><a href="contact">CONTACTO</a></li>
         </ul>
       </nav>
-      <img src="img/logo-adalab.png" alt="Adalab" />
+      <div class="logo">
+        <img src="img/logo-adalab.png" alt="Adalab" />
+      </div>
     </footer>
   </body>
 </html>

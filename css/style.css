@@ -107,17 +107,17 @@ div .claim {
   justify-content: center;
   background-color: #f1f1f1;
 }
-.footer {
-}
+
 .fab,
 .fas {
   color: var(--main-color);
 }
+
 .teamBlock {
   background-color: var(--light-color);
-  font-family: var(--primary-font);
+
   width: 320px;
-  margin: ;
+  /* margin: ; */
 }
 /* margenes superior/inferior
 1.875rem  1.875rem  */
@@ -163,7 +163,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 1.875rem;
-  margin-bottom: 0.938rem;}
+  margin-bottom: 0.938rem;
+}
 
 .weakness {
   box-sizing: 15px, 1046px, 290px, 192px;
@@ -183,7 +184,6 @@ body {
   color: var(--main-color);
   margin-top: 1.875rem;
   margin-bottom: 0.938rem;
-  
 }
 .aboutUsBlock h4 {
   font-size: 1.25rem;
@@ -221,9 +221,49 @@ body {
   display: inline;
 }
 
-.socialMedia li:after {
+.socialMedia li:not(:last-child):after {
   padding: 10px;
   content: "·";
+  color: var(--main-color);
   font-weight: bolder;
 }
+
+.footer {
+  background-color: var(--light-color);
+  font-size: 14px;
+  font-family: var(--primary-font);
+  border-top: 1px solid var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 320px;
+  height: 250px;
+}
+.footer p {
+  color: var(--secondary-text-color);
+}
+.footer li {
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  width: 115.9px;
+  height: 45px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.rectangle {
+  /* position: relative; */
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: var(--light-color);
+  z-index: 990;
 }
