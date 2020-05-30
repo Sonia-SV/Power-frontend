@@ -68,7 +68,7 @@ ul {
 .hero {
   height: 421px;
   width: 320px;
-  background-image: url("/img/power_ranger.png");
+  background-image: url("../img/power_ranger.png");
   background-size: auto 60%;
   background-position: center;
   /* background-color: var(--background-color); */
