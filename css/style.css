@@ -38,9 +38,10 @@ ul {
 html {
   font-size: 16px;
 }
-
-body {
-  max-width: 768px;
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
 /* MENU Y HEADER */
@@ -241,14 +242,13 @@ body {
   margin-left: 0.938rem;
 }
 
-/* NO SABEMOS USAR ESTO NI SI SIRVE PARA ALGO. NO LO ENTENDEMOS <3
+/* NO SABEMOS USAR ESTO NI SI SIRVE PARA ALGO. NO LO ENTENDEMOS <3*/
 
-.pic {
+/* .pic {
   width: 188px;
   height: 188px;
   border: red solid 5px;
-  object-fit: contain;
-  box-sizing: content-box;
+  object-fit: cover;
 } */
 
 .pic img {
@@ -341,8 +341,9 @@ body {
     justify-content: space-between;
     align-items: center;
     opacity: 0.95;
-    max-width: 768px;
+    max-width: 1200px;
   }
+
   .top ul {
     background-color: transparent;
   }
@@ -379,16 +380,78 @@ body {
   }
 
   /* TEAM MEMBERS */
+  /* .bio p {
+    max-width: 27.5rem;
+  } */
   .teamplayer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
+    flex-direction: row;
     margin-left: 2.75rem;
     margin-right: 2.75rem;
   }
 
-  .teamplayer .pic {
-    margin: none;
+  .teamplayer:nth-child(odd) {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .pic img {
+    max-width: 206px;
+  }
+
+  .bioBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1.875rem;
+  }
+
+  .bioBlock p {
+    margin: 0;
+  }
+
+  .teamplayer:nth-child(even) .bioBlock {
+    margin-left: 1.875rem;
+  }
+
+  .teamplayer:nth-child(odd) .bioBlock {
+    align-items: flex-end;
+    margin-right: 1.875rem;
+  }
+
+  .teamplayer:nth-child(even) .bioBlock .bio p {
+    text-align: left;
+  }
+
+  .teamplayer:nth-child(odd) .bioBlock .bio p {
+    text-align: right;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    position: relative;
+  }
+
+  .footerCopy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-bottom: 0px;
+  }
+
+  .boxFooter {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footerMenu ul li {
+    padding: 10px;
   }
 }
