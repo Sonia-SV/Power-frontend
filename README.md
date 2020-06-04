@@ -5,6 +5,7 @@ Miembros en orden alfabético:
 
 * Ana Maria Caruntu
 * Lucía Martínez
+* Sonia Sanz Vivas
 * Marta Soler
 * Miriam Suárez
-* Sonia Sanz Vivas
+
