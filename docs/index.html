@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./assets/css/core/reset.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Web Grupal</title>
+    <title>Power Frontend</title>
     <script
       src="https://kit.fontawesome.com/3cedc0b3ed.js"
       crossorigin="anonymous"
@@ -23,9 +23,9 @@
   <body>
     <div class="wrapper">
       <header>
-        <nav class="top">
-          <h2 class="teamName"><a href="#">POWER FRONTEND</a></h2>
-          <ul class="menuItems">
+        <nav class="header">
+          <h2 class="header__teamName"><a href="#">POWER FRONTEND</a></h2>
+          <ul class="header__menuItems">
             <li><a href="#team" title="Ir a Equipo">EQUIPO</a></li>
             <li>
               <a href="#aboutUs" title="Ir a Quiénes somos">QUIÉNES SOMOS</a>
@@ -38,65 +38,63 @@
       <main>
         <section class="hero">
           <div>
-            <h1 class="claim">
+            <h1 class="hero__claim">
               <em>Go go power rangers! Go go power rangers! Go go power rangers!</em>
             </h1>
           </div>
         </section>
-        <section class="teamBlock">
-          <section class="teamBlock">
-            <div>
-              <h2 id="team">Equipo</h2>
+        <section class="team">
+          <div>
+            <h2 id="team">Equipo</h2>
+            <p>
+              Cuando la malvada Desigualdad de Género es liberada por error de su
+              prisión espacial, la poderosa hechicera Adalab recluta a un grupo de
+              mujeres de destacadas habilidades para enfrentarse a su archienemiga y
+              recuperar el espacio femenino en el mundo tecnológico.
+            </p>
+            <p>
+              Para esta misión contarán con etiquetas, propiedades especiales y la
+              capacidad de invocar poderes extraordinarios procedentes de los
+              legendarios lenguajes de programación. A estas anónimas programadoras las
+              conocemos como las
+            </p>
+            <p><strong>Power Front-End</strong>.</p>
+          </div>
+          <div class="team__virtues">
+            <div class="team__virtues__rectangle"></div>
+            <article class="team__virtues__strengths">
+              <h3>Fortalezas</h3>
               <p>
-                Cuando la malvada Desigualdad de Género es liberada por error de su
-                prisión espacial, la poderosa hechicera Adalab recluta a un grupo de
-                mujeres de destacadas habilidades para enfrentarse a su archienemiga y
-                recuperar el espacio femenino en el mundo tecnológico.
+                Construyendo tu página con semántica y accesibilidad, te posicionamos en
+                lo más alto de las búsquedas. Nuestro manejo del CSS embellecerá tanto
+                tu página que el propio Lord Zedd quedará encantado y no destruirá la
+                Tierra.
               </p>
+            </article>
+
+            <article class="team__virtues__weakness">
+              <h3>Debilidades</h3>
               <p>
-                Para esta misión contarán con etiquetas, propiedades especiales y la
-                capacidad de invocar poderes extraordinarios procedentes de los
-                legendarios lenguajes de programación. A estas anónimas programadoras las
-                conocemos como las
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
+                ullamcorper mauris, vel convallis metus eleifend in. Cras hendrerit at
+                ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi
+                interdum neque et aliquam varius.
               </p>
-              <p><strong>Power Front-End</strong>.</p>
-            </div>
-            <div class="strengthBlocks">
-              <div class="rectangle"></div>
-              <article class="strengths">
-                <h3>Fortalezas</h3>
-                <p>
-                  Construyendo tu página con semántica y accesibilidad, te posicionamos en
-                  lo más alto de las búsquedas. Nuestro manejo del CSS embellecerá tanto
-                  tu página que el propio Lord Zedd quedará encantado y no destruirá la
-                  Tierra.
-                </p>
-              </article>
-
-              <article class="weakness">
-                <h3>Debilidades</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-                  ullamcorper mauris, vel convallis metus eleifend in. Cras hendrerit at
-                  ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi
-                  interdum neque et aliquam varius.
-                </p>
-              </article>
-            </div>
-          </section>
-
+            </article>
+          </div>
         </section>
 
-        <section class="aboutUsBlock">
+
+        <section class="aboutUs">
           <h2 id="aboutUs">QUIÉNES SOMOS</h2>
-          <article class="teamplayer">
-            <div class="pic">
+          <article class="aboutUs__teamplayer">
+            <div class="aboutUs__teamplayer__pic">
               <img src="./assets/images/foto_Ana.jpg" alt="Ana Maria" />
             </div>
 
-            <div class="bioBlock">
-              <div class="names"><h4>Ana María Caruntu</h4></div>
-              <div class="bio">
+            <div class="aboutUs__teamplayer__bioBlock">
+              <div class="aboutUs__teamplayer__bioBlock__names"><h4>Ana María Caruntu</h4></div>
+              <div>
                 <p>
                   Soy Ana Caruntu. Me recordaréis por taquillazos como “HTML V”, el
       	  multi galardonado “Código a muerte en Torremolinos” o por ser el
@@ -106,7 +104,7 @@
                 </p>
               </div>
 
-              <div class="socialMedia">
+              <div class="aboutUs__teamplayer__bioBlock__socialMedia">
                 <ul>
                   <li>
                     <!--TODO: twitter de Ana-->
@@ -151,20 +149,20 @@
           </article>
 
 
-          <article class="teamplayer">
-            <div class="pic">
+          <article class="aboutUs__teamplayer">
+            <div class="aboutUs__teamplayer__pic">
               <img src="./assets/images/foto_Lucia.jpg" alt="Lucía Martínez" />
             </div>
 
-            <div class="bioBlock">
-              <div class="names"><h4>Lucía Martínez</h4></div>
-              <div class="bio">
+            <div class="aboutUs__teamplayer__bioBlock">
+              <div class="aboutUs__teamplayer__bioBlock__names"><h4>Lucía Martínez</h4></div>
+              <div>
                 <p>
                   Entomóloga cazadora de bugs por naturaleza, la Power Frontend azul se topa con todos los bichejos que tenga tu código. Ejecutando git gud se maneja con tu programa de control de versiones favorito para evitar conflictos con la Reina Bansheera.
                 </p>
               </div>
 
-              <div class="socialMedia">
+              <div class="aboutUs__teamplayer__bioBlock__socialMedia">
                 <ul>
                   <li>
                     <!--TODO: twitter de Ana-->
@@ -209,20 +207,20 @@
           </article>
 
 
-          <article class="teamplayer">
-            <div class="pic">
+          <article class="aboutUs__teamplayer">
+            <div class="aboutUs__teamplayer__pic">
               <img src="./assets/images/foto_Sonia.jpg" alt="Sonia Sanz" />
             </div>
 
-            <div class="bioBlock">
-              <div class="names"><h4>Sonia Sanz</h4></div>
-              <div class="bio">
+            <div class="aboutUs__teamplayer__bioBlock">
+              <div class="aboutUs__teamplayer__bioBlock__names"><h4>Sonia Sanz</h4></div>
+              <div>
                 <p>
                   Bajo el casco de la PowerFrontend amarilla se esconde Sonia Sanz, cabezota y perfeccionista a partes iguales, no parará mientras Rita siga libre o mientras quede una etiqueta sin cerrar. Cree que el mundo sería un lugar mejor con más Dinobots y menos márgenes por defecto.
                 </p>
               </div>
 
-              <div class="socialMedia">
+              <div class="aboutUs__teamplayer__bioBlock__socialMedia">
                 <ul>
                   <li>
                     <!--TODO: twitter de Ana-->
@@ -266,14 +264,14 @@
             </div>
           </article>
 
-          <article class="teamplayer">
-            <div class="pic">
+          <article class="aboutUs__teamplayer">
+            <div class="aboutUs__teamplayer__pic">
               <img src="./assets/images/foto_Marta.jpg" alt="Marta Soler" />
             </div>
 
-            <div class="bioBlock">
-              <div class="names"><h4>Marta Soler</h4></div>
-              <div class="bio">
+            <div class="aboutUs__teamplayer__bioBlock">
+              <div class="aboutUs__teamplayer__bioBlock__names"><h4>Marta Soler</h4></div>
+              <div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
             ullamcorper mauris, vel convallis metus eleifend in. Cras hendrerit
@@ -282,7 +280,7 @@
                 </p>
               </div>
 
-              <div class="socialMedia">
+              <div class="aboutUs__teamplayer__bioBlock__socialMedia">
                 <ul>
                   <li>
                     <!--TODO: twitter de Ana-->
@@ -327,20 +325,20 @@
           </article>
 
 
-          <article class="teamplayer">
-            <div class="pic">
+          <article class="aboutUs__teamplayer">
+            <div class="aboutUs__teamplayer__pic">
               <img src="./assets/images/foto_Miriam.jpg" alt="Miriam Suárez" />
             </div>
 
-            <div class="bioBlock">
-              <div class="names"><h4>Miriam Suárez</h4></div>
-              <div class="bio">
+            <div class="aboutUs__teamplayer__bioBlock">
+              <div class="aboutUs__teamplayer__bioBlock__names"><h4>Miriam Suárez</h4></div>
+              <div>
                 <p>
                   Miriam Suárez aka Miriam Schaefer es el power-ranger rosa. Con mucho ojo para los detalles y gusto por las cosas bonitas, se encargará de que todos los elementos de tu página queden fetén. Fan incondicional de Oasis, de las croquetas y los boquerones en vinagre.
                 </p>
               </div>
 
-              <div class="socialMedia">
+              <div class="aboutUs__teamplayer__bioBlock__socialMedia">
                 <ul>
                   <li>
                     <!--TODO: twitter de Ana-->
@@ -387,12 +385,12 @@
       </main>
 
       <footer class="footer">
-        <div class="footerTablet">
-          <span class="footerCopy">
+        <div class="footer__tablet">
+          <span class="footer__tablet__copy">
             <p>Power FrontEnd ©2020</p>
           </span>
-          <div class="boxFooter">
-            <nav class="footerMenu">
+          <div class="footer__box">
+            <nav class="footer__box__menu">
               <ul>
                 <li><a href="#team" tittle="Ir a Equipo">EQUIPO</a></li>
                 <li>
@@ -401,7 +399,7 @@
                 <li><a href="contact" tittle="Ir a Contacto">CONTACTO</a></li>
               </ul>
             </nav>
-            <div class="logo">
+            <div class="footer__box__logo">
               <a href="https://adalab.es/"
                 ><img src="./assets/images/logo-adalab.png" alt="Adalab"
               /></a>
