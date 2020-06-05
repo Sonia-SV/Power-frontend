@@ -1,3 +1,45 @@
-.main__list {
-  padding-left: 2rem;
+/* HERO */
+
+.hero {
+  height: 26.31rem;
+  background-image: url("../images/power_ranger.png");
+  background-size: auto 60%;
+  background-position: center;
+  background-color: $background-color;
+  background-repeat: no-repeat;
+  z-index: 3;
+  position: relative;
+  width: 100%;
+
+  @media all and (min-width: $tablet) {
+    background-size: 150%;
+  }
+
+  & div {
+    flex-direction: row;
+    height: 80px;
+    width: 90%;
+    background-color: $light-color;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+    @media all and (min-width: $tablet) {
+      bottom: 0;
+      left: 0;
+      transform: translate(0%, 0%);
+      margin-left: 2.875rem;
+      margin-right: 17.56rem;
+      width: auto;
+      opacity: 0.8;
+    }
+  }
+
+  &__claim {
+    font-family: $primary-font-bold;
+    font-size: 1.125rem;
+    background-color: $light-color;
+    margin: 0.875rem 0.9375rem 1rem 0.875rem;
+  }
 }

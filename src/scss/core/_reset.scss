@@ -349,3 +349,22 @@ template {
 [hidden] {
   display: none;
 }
+
+// COMANDOS DE RESET
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+  padding-inline-start: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
+}
