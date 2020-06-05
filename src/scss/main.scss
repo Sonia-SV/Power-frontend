@@ -46,7 +46,7 @@ html {
 
 /* MENU Y HEADER */
 
-.top {
+.header {
   font-family: var(--secondary-font);
   color: var(--light-color);
   width: 100%;
@@ -57,7 +57,7 @@ html {
   top: 0;
   max-width: 1200px;
 }
-.teamName {
+.header__teamName {
   background-color: var(--main-color);
   font-size: 1rem;
   height: 3.75rem;
@@ -69,7 +69,7 @@ html {
   opacity: 0.95;
 }
 
-.menuItems {
+.header__menuItems {
   background-color: var(--secondary-color);
   font-size: 0.938rem;
   height: 45px;
@@ -79,7 +79,7 @@ html {
   align-items: center;
   opacity: 0.9;
 }
-.menuItems li {
+.header__menuItems li {
   display: inline-block;
 }
 
@@ -107,7 +107,7 @@ html {
   bottom: 0;
   transform: translate(-50%, 50%);
 }
-.claim {
+.hero__claim {
   font-family: var(--primary-font-bold);
   font-size: 1.125rem;
   background-color: var(--light-color);
@@ -126,12 +126,12 @@ html {
   margin-bottom: 0.938rem;
 }
 
-.teamBlock {
+.team {
   margin-top: 2.813rem;
   background-color: var(--light-color);
 }
 
-.teamBlock p {
+.team p {
   margin-right: 0.938rem;
   margin-left: 0.938rem;
   text-align: center;
@@ -143,7 +143,7 @@ html {
 
 /* STRENGTHS AND WEAKNESS */
 
-.rectangle {
+.team__virtues__rectangle {
   height: 30px;
   width: 30px;
   background-color: var(--light-color);
@@ -154,7 +154,7 @@ html {
   z-index: 990;
 }
 
-.strengthBlocks {
+.team__virtues {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +164,7 @@ html {
   position: relative;
 }
 
-.strengthBlocks h3 {
+.team__virtues h3 {
   color: var(--main-color);
   font-size: 1.375 rem;
   box-sizing: 290px, 45px;
@@ -175,7 +175,7 @@ html {
   margin-bottom: 0.938rem;
 }
 
-.strengths {
+.team__virtues__strengths {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,20 +183,20 @@ html {
   margin-right: 0.9375rem;
 }
 
-.strengths h3 {
+.team__virtues__strengths h3 {
   display: flex;
   justify-content: center;
   margin-top: 1.875rem;
   margin-bottom: 0.938rem;
 }
-.weakness h3 {
+.team__virtues__weakness h3 {
   display: flex;
   justify-content: center;
   margin-top: 1.875rem;
   margin-bottom: 0.938rem;
 }
 
-.weakness {
+.team__virtues__weakness {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,13 +215,13 @@ html {
   margin-top: 1.875rem;
   margin-bottom: 0.938rem;
 }
-.aboutUsBlock h4 {
+.aboutUs h4 {
   font-size: 1.25rem;
   font-family: var(--primary-font);
   color: var(--heading-color);
 }
 
-.aboutUsBlock p {
+.aboutUs p {
   font-size: 1rem;
   font-family: var(--primary-font);
   color: var(--main-text-color);
@@ -231,19 +231,19 @@ html {
 
 /* TEAM MEMBERS */
 
-.teamplayer {
+.aboutUs__teamplayer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   justify-items: center;
 }
 
-.teamplayer p {
+.aboutUs__teamplayer p {
   margin-right: 0.938rem;
   margin-left: 0.938rem;
 }
 
-.pic img {
+.aboutUs__teamplayer__pic img {
   display: block;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
@@ -251,7 +251,7 @@ html {
   box-sizing: content-box;
 }
 
-.bioBlock {
+.aboutUs__teamplayer__bioBlock {
   display: flex;
   flex-direction: column;
 }
@@ -263,24 +263,24 @@ html {
   color: var(--main-color);
 }
 
-.socialMedia {
+.aboutUs__teamplayer__bioBlock__socialMedia {
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem;
 }
 
-.socialMedia ul,
-.names {
+.aboutUs__teamplayer__bioBlock__socialMedia ul,
+.aboutUs__teamplayer__bioBlock__names {
   display: flex;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.socialMedia li {
+.aboutUs__teamplayer__bioBlock__socialMedia li {
   display: inline;
 }
 
-.socialMedia li:not(:last-child):after {
+.aboutUs__teamplayer__bioBlock__socialMedia li:not(:last-child):after {
   padding: 10px;
   content: "·";
   color: var(--main-color);
@@ -299,7 +299,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
 }
-.footerCopy p {
+.footer__tablet__copy p {
   color: var(--secondary-text-color);
   padding-top: 1.25rem;
 }
@@ -309,18 +309,18 @@ html {
   padding: 0.125rem;
 }
 
-.footer .footerMenu {
+.footer .footer__box__menu {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.logo {
+.footer__box__logo {
   display: inline-block;
   width: 7.25rem;
   height: 2.813rem;
 }
 
-.logo img {
+.footer__box__logo img {
   width: 100%;
 }
 
@@ -329,7 +329,7 @@ html {
 @media all and (min-width: 768px) {
   /* MENU Y HEADER */
 
-  .top {
+  .header {
     font-family: var(--secondary-font);
     color: var(--light-color);
     background-color: var(--main-color);
@@ -341,16 +341,16 @@ html {
     opacity: 0.95;
   }
 
-  .top ul {
+  .header ul {
     background-color: transparent;
   }
 
-  .teamName {
+  .header__teamName {
     justify-content: flex-start;
     margin-left: 2.813rem;
   }
 
-  .menuItems {
+  .header__menuItems {
     height: auto;
     margin-right: 2.813rem;
   }
@@ -372,23 +372,23 @@ html {
 
   /* STRENGTHS AND WEAKNESS */
 
-  .strengthBlocks {
+  .team__virtues {
     flex-direction: row;
   }
 
   /* TEAM MEMBERS */
 
-  .pic img {
+  .aboutUs__teamplayer__pic img {
     max-width: 206px;
   }
 
-  .bioBlock p {
+  .aboutUs__teamplayer__bioBlock p {
     margin: 0;
     width: 27.5rem;
   }
 
   /* Imagen a la izquierda */
-  .teamplayer:nth-child(even) {
+  .aboutUs__teamplayer:nth-child(even) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -398,19 +398,19 @@ html {
     margin-right: 2.75rem;
   }
 
-  .teamplayer:nth-child(even) .bioBlock {
+  .aboutUs__teamplayer:nth-child(even) .aboutUs__teamplayer__bioBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 1.875rem;
   }
 
-  .teamplayer:nth-child(even) p {
+  .aboutUs__teamplayer:nth-child(even) p {
     text-align: left;
   }
 
   /* Imagen a la derecha */
-  .teamplayer:nth-child(odd) {
+  .aboutUs__teamplayer:nth-child(odd) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -419,17 +419,17 @@ html {
     margin-right: 2.75rem;
   }
 
-  .teamplayer:nth-child(odd) .bioBlock {
+  .aboutUs__teamplayer:nth-child(odd) .aboutUs__teamplayer__bioBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-right: 1.875rem;
     order: 1;
   }
-  .teamplayer:nth-child(odd) .pic {
+  .aboutUs__teamplayer:nth-child(odd) .aboutUs__teamplayer__pic {
     order: 2;
   }
-  .teamplayer:nth-child(odd) p {
+  .aboutUs__teamplayer:nth-child(odd) p {
     text-align: right;
   }
 
@@ -443,13 +443,13 @@ html {
     padding-bottom: 1.5rem;
   }
 
-  .footerTablet {
+  .footer__tablet {
     width: 100%;
     margin-top: 1.5rem;
     position: relative;
   }
 
-  .footerCopy p {
+  .footer__tablet__copy p {
     position: absolute;
     top: 0;
     left: 0;
@@ -457,7 +457,7 @@ html {
     padding-top: 0.375rem;
   }
 
-  .boxFooter {
+  .footer__box {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
@@ -465,12 +465,12 @@ html {
     align-items: flex-end;
   }
 
-  .footer .footerMenu {
+  .footer .footer__box__menu {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .footerMenu ul {
+  .footer__box__menu ul {
     display: flex;
     height: 5.625rem;
     flex-direction: column;
@@ -480,7 +480,7 @@ html {
   .footer li {
     text-align: right;
   }
-  .footerTablet .logo {
+  .footer__tablet .logo {
     width: 7.25rem;
     padding-bottom: 50px;
   }
