@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Frontend</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="wrapper"> 
+        <h2 class="header__teamName"><a href="#">POWER FRONTEND</a></h2>
+        <ul class="header__menuItems">
+          <li><a href="#team" title="Ir a Equipo">EQUIPO</a></li>
+          <li>
+            <a href="#aboutUs" title="Ir a Quiénes somos">QUIÉNES SOMOS</a>
+          </li>
+          <li><a href="./contact.html" title="Ir a Contacto">CONTACTO</a></li>
+        </ul>
+      </nav></div> 
+    </header>
+
+    <section class="hero"></section>
+    <section class="contact">
+      <div class="contact__summary">
+        <h1>contacto</h1>
+        <p class="contact__summary__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
+          ullamcorper mauris, vel convallis metus eleifend in.
+        </p>
+        <br />
+        <p class="contact__summary__hint">
+          <span>Todos los campos marcados con </span
+          ><span> son obligatorios.</span>
+        </p>
+      </div>
+      <form action="/contact" method="get" class="contact__form">
+        <label for="name">Nombre completo</label>
+        <input placeholder="Nombre..." type="text" name="name" />
+        <div>
+          <label for="mail">Email</label>
+          <input
+            placeholder=" nombre.apellidos@mail.com"
+            type="mail"
+            name="mail"
+          />
+
+          <label for="tlf">Teléfono</label>
+          <input placeholder=" Ej: 123456789" type="number" name="tlf" />
+        </div>
+        <label for="message">Mensaje</label>
+
+        <input placeholder="¿Qué necesitas?" type="text" name="message" />
+        <input class="contact__form__button" type="submit" value="ENVIAR" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__tablet wrapper">
+        <span class="footer__tablet__copy">
+          <p>Power FrontEnd ©2020</p>
+        </span>
+        <div class="footer__box">
+          <nav class="footer__box__menu">
+            <ul>
+              <li><a href="#team" tittle="Ir a Equipo">EQUIPO</a></li>
+              <li>
+                <a href="#aboutUs" tittle="Ir a Quienes Somos">QUIÉNES SOMOS</a>
+              </li>
+              <li><a href="contact" tittle="Ir a Contacto">CONTACTO</a></li>
+            </ul>
+          </nav>
+          <div class="footer__box__logo">
+            <a href="https://adalab.es/"
+              ><img src="./assets/images/logo-adalab.png" alt="Adalab"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+  </body>
+</html>
