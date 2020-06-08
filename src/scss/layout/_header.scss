@@ -2,11 +2,14 @@
   font-family: $secondary-font;
   color: $light-color;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   z-index: 999;
   position: fixed;
   top: 0;
+
+  & .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__teamName {
     background-color: $main-color;
@@ -37,10 +40,14 @@
 @include tablet {
   .header {
     background-color: $main-color;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+
     opacity: 0.95;
+
+    & .wrapper {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__teamName {
       justify-content: flex-start;
       margin-left: 2.813rem;

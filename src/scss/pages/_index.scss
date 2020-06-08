@@ -11,15 +11,22 @@
   position: relative;
   width: 100%;
 
-  & div {
+  &__div {
     flex-direction: row;
     height: 80px;
-    width: 90%;
+    width: auto;
     background-color: $light-color;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & span {
+      display: inline-block;
+      white-space: nowrap;
+    }
   }
 
   &__claim {
@@ -27,6 +34,7 @@
     font-size: 1.125rem;
     background-color: $light-color;
     margin: 0.875rem 0.9375rem 1rem 0.875rem;
+    line-height: 2rem;
   }
 }
 
@@ -34,7 +42,7 @@
   .hero {
     background-size: 150%;
 
-    & div {
+    &__div {
       bottom: 0;
       left: 0;
       transform: translate(0%, 0%);
