@@ -3,7 +3,7 @@
 .hero {
   height: 26.31rem;
   background-image: url("../images/power_ranger.png");
-  background-size: auto 60%;
+  background-size: cover;
   background-position: center;
   background-color: $background-color;
   background-repeat: no-repeat;
@@ -39,18 +39,14 @@
 }
 
 @include tablet {
-  .hero {
-    background-size: 150%;
-
-    &__div {
-      bottom: 0;
-      left: 0;
-      transform: translate(0%, 0%);
-      margin-left: 2.875rem;
-      margin-right: 17.56rem;
-      width: auto;
-      opacity: 0.8;
-    }
+  .hero__div {
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    margin-left: 2.875rem;
+    margin-right: 17.56rem;
+    width: auto;
+    opacity: 0.8;
   }
 }
 
