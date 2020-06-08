@@ -11,10 +11,6 @@
   position: relative;
   width: 100%;
 
-  @media all and (min-width: $tablet) {
-    background-size: 150%;
-  }
-
   & div {
     flex-direction: row;
     height: 80px;
@@ -24,8 +20,21 @@
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
+  }
 
-    @media all and (min-width: $tablet) {
+  &__claim {
+    font-family: $primary-font-bold;
+    font-size: 1.125rem;
+    background-color: $light-color;
+    margin: 0.875rem 0.9375rem 1rem 0.875rem;
+  }
+}
+
+@include tablet {
+  .hero {
+    background-size: 150%;
+
+    & div {
       bottom: 0;
       left: 0;
       transform: translate(0%, 0%);
@@ -35,11 +44,239 @@
       opacity: 0.8;
     }
   }
+}
 
-  &__claim {
-    font-family: $primary-font-bold;
-    font-size: 1.125rem;
+/* TEAM BLOCK */
+
+#team {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  color: $secondary-color;
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
+}
+
+.team {
+  margin-top: 2.813rem;
+  background-color: $light-color;
+
+  & p {
+    margin-right: 0.938rem;
+    margin-left: 0.938rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: $primary-font;
+    color: $main-text-color;
+    line-height: 1.5rem;
+  }
+}
+
+/* STRENGTHS AND WEAKNESS */
+
+.team__virtues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f1f1f1;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+
+  &__rectangle {
+    height: 30px;
+    width: 30px;
     background-color: $light-color;
-    margin: 0.875rem 0.9375rem 1rem 0.875rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 990;
+  }
+
+  & h3 {
+    color: $main-color;
+    font-size: 1.375 rem;
+    box-sizing: 290px, 45px;
+    display: flex;
+    justify-content: center;
+    font-family: $secondary-font;
+    margin-top: 1.875rem;
+    margin-bottom: 0.938rem;
+  }
+
+  &__strengths {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+
+    & h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.875rem;
+      margin-bottom: 0.938rem;
+    }
+  }
+  &__weakness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+
+    & h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.875rem;
+      margin-bottom: 0.938rem;
+    }
+  }
+}
+
+@include tablet {
+  .team__virtues {
+    flex-direction: row;
+  }
+}
+
+/* ABOUT US */
+
+#aboutUs {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  color: $main-color;
+  margin-top: 1.875rem;
+  margin-bottom: 0.938rem;
+}
+
+.aboutUs {
+  & h4 {
+    font-size: 1.25rem;
+    font-family: $primary-font;
+    color: $heading-color;
+  }
+  & p {
+    font-size: 1rem;
+    font-family: $primary-font;
+    color: $main-text-color;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
+
+.aboutUs__teamplayer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+
+  & p {
+    margin-right: 0.938rem;
+    margin-left: 0.938rem;
+  }
+
+  &__pic img {
+    display: block;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    max-width: 180px;
+    box-sizing: content-box;
+  }
+
+  &__bioBlock {
+    display: flex;
+    flex-direction: column;
+
+    &__socialMedia {
+      margin-top: 0.9375rem;
+      margin-bottom: 0.9375rem;
+
+      & li {
+        display: inline;
+
+        &:not(:last-child):after {
+          padding: 10px;
+          content: "·";
+          color: $main-color;
+          font-weight: bolder;
+        }
+      }
+    }
+    &__names,
+    &__socialMedia ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* SOCIAL MEDIA BUTTONS */
+
+.fab,
+.fas {
+  color: $main-color;
+}
+
+/* TEAM MEMBERS */
+
+@include tablet {
+  .aboutUs__teamplayer {
+    &__pic img {
+      max-width: 206px;
+    }
+
+    &__bioBlock p {
+      margin: 0;
+      width: 27.5rem;
+    }
+    &:nth-child(even) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      margin-left: 2.75rem;
+      margin-right: 2.75rem;
+    }
+    &:nth-child(even) &__bioBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 1.875rem;
+    }
+    &:nth-child(even) p {
+      text-align: left;
+    }
+
+    &:nth-child(odd) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-left: 2.75rem;
+      margin-right: 2.75rem;
+    }
+    &:nth-child(odd) &__bioBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 1.875rem;
+      order: 1;
+    }
+
+    &:nth-child(odd) &__pic {
+      order: 2;
+    }
+
+    &:nth-child(odd) p {
+      text-align: right;
+    }
   }
 }
