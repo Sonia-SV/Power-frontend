@@ -17,7 +17,13 @@
     <link href="./assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <include src="./partials/header.html"></include>
+    <include
+      src="./partials/header.html"
+      contact-url="#"
+      aboutus-url="./index.html#aboutUs"
+      team-url="./index.html#team"
+      home-url="./index.html"
+    ></include>
     <section class="hero"></section>
     <section class="contact">
       <div class="contact__summary">
@@ -32,7 +38,11 @@
           ><span> son obligatorios.</span>
         </p>
       </div>
-      <form action="/contact" method="get" class="contact__form">
+      <form
+        action="https://formspree.io/myynjyga"
+        method="POST"
+        class="contact__form"
+      >
         <label for="name">Nombre completo</label>
         <input placeholder="Nombre..." type="text" name="name" />
         <div>
@@ -52,6 +62,11 @@
         <input class="contact__form__button" type="submit" value="ENVIAR" />
       </form>
     </section>
-    <include src="./partials/footer.html"></include>
+    <include
+      src="./partials/footer.html"
+      contact-url="#"
+      aboutus-url="./index.html#aboutUs"
+      team-url="./index.html#team"
+    ></include>
   </body>
 </html>
