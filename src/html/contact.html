@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -29,8 +28,8 @@
       <div class="contact__summary">
         <h1>contacto</h1>
         <p class="contact__summary__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-          ullamcorper mauris, vel convallis metus eleifend in.
+          Si quieres iniciar la comunicación intergaláctica con las Power
+          Frontend, anida tus datos a continuación.
         </p>
         <br />
         <p class="contact__summary__hint">
@@ -44,13 +43,14 @@
         class="contact__form"
       >
         <label for="name">Nombre completo</label>
-        <input placeholder="Nombre..." type="text" name="name" />
+        <input placeholder="Nombre..." type="text" name="name" required />
         <div>
           <label for="mail">Email</label>
           <input
             placeholder=" nombre.apellidos@mail.com"
             type="mail"
             name="mail"
+            required
           />
 
           <label for="tlf">Teléfono</label>
@@ -58,8 +58,13 @@
         </div>
         <label for="message">Mensaje</label>
 
-        <input placeholder="¿Qué necesitas?" type="text" name="message" />
-        <input class="contact__form__button" type="submit" value="ENVIAR" />
+        <input
+          placeholder="¿Qué necesitas?"
+          type="text"
+          name="message"
+          required
+        />
+        <input class="contact__form__button" type="submit" value="enviar" />
       </form>
     </section>
     <include
