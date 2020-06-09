@@ -40,7 +40,6 @@
 @include tablet {
   .header {
     background-color: $main-color;
-
     opacity: 0.95;
 
     & .wrapper {
@@ -57,5 +56,16 @@
       height: auto;
       margin-right: 2.813rem;
     }
+  }
+}
+
+@include desktop {
+  .header__teamName {
+    margin: 0;
+  }
+  .header__menuItems {
+    margin-right: 0;
+    max-width: 40%;
+    justify-content: space-between;
   }
 }

@@ -61,7 +61,11 @@
   }
 }
 
-/* STRENGTHS AND WEAKNESS */
+@include desktop {
+  .team__div {
+    margin-left: 0;
+  }
+} /* STRENGTHS AND WEAKNESS */
 
 .team__virtues {
   background-color: #f1f1f1;
@@ -281,5 +285,12 @@
     &:nth-child(odd) p {
       text-align: right;
     }
+  }
+}
+@include desktop {
+  .aboutUs__teamplayer:nth-child(even),
+  .aboutUs__teamplayer:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
