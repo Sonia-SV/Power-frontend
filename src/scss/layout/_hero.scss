@@ -1,0 +1,11 @@
+.hero {
+  height: 26.31rem;
+  background-image: url("../images/power_ranger.png");
+  background-size: cover;
+  background-position: center;
+  background-color: $background-color;
+  background-repeat: no-repeat;
+  z-index: 3;
+  position: relative;
+  width: 100%;
+}

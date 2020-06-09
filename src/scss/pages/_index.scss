@@ -1,56 +1,3 @@
-/* HERO */
-
-.hero {
-  height: 26.31rem;
-  background-image: url("../images/power_ranger.png");
-  background-size: cover;
-  background-position: center;
-  background-color: $background-color;
-  background-repeat: no-repeat;
-  z-index: 3;
-  position: relative;
-  width: 100%;
-
-  &__div {
-    border: 1px solid red;
-    flex-direction: row;
-    height: 80px;
-    width: auto;
-    background-color: $light-color;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 999;
-    & span {
-      display: inline-block;
-      white-space: nowrap;
-    }
-  }
-
-  &__claim {
-    font-family: $primary-font-bold;
-    font-size: 1.125rem;
-    background-color: $light-color;
-    margin: 0.875rem 0.9375rem 1rem 0.875rem;
-    line-height: 2rem;
-  }
-}
-
-@include tablet {
-  .hero__div {
-    bottom: 0;
-    left: 0;
-    transform: translate(0%, -100%);
-    width: auto;
-    opacity: 0.8;
-    margin-left: 0.938rem;
-  }
-}
-
 /* TEAM BLOCK */
 
 #team {
@@ -68,7 +15,6 @@
 .team {
   background-color: $light-color;
   position: relative;
-  border: 1px solid blue;
   & p {
     margin-right: 0.938rem;
     margin-left: 0.938rem;
@@ -77,6 +23,41 @@
     font-family: $primary-font;
     color: $main-text-color;
     line-height: 1.5rem;
+  }
+  &__div {
+    flex-direction: row;
+    height: 80px;
+    width: auto;
+    background-color: $light-color;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+    & span {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+  &__claim {
+    font-family: $primary-font-bold;
+    font-size: 1.125rem;
+    background-color: $light-color;
+    margin: 0.875rem 0.9375rem 1rem 0.875rem;
+    line-height: 2rem;
+  }
+}
+@include tablet {
+  .team__div {
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, -100%);
+    width: auto;
+    opacity: 0.8;
+    margin-left: 0.938rem;
   }
 }
 
