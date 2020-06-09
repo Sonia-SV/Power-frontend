@@ -12,17 +12,19 @@
   width: 100%;
 
   &__div {
+    border: 1px solid red;
     flex-direction: row;
     height: 80px;
     width: auto;
     background-color: $light-color;
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 50%);
+    top: 0;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 999;
     & span {
       display: inline-block;
       white-space: nowrap;
@@ -42,11 +44,10 @@
   .hero__div {
     bottom: 0;
     left: 0;
-    transform: translate(0%, 0%);
-    margin-left: 2.875rem;
-    margin-right: 17.56rem;
+    transform: translate(0%, -100%);
     width: auto;
     opacity: 0.8;
+    margin-left: 0.938rem;
   }
 }
 
@@ -61,12 +62,13 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  padding-top: 2.813rem;
 }
 
 .team {
-  margin-top: 2.813rem;
   background-color: $light-color;
-
+  position: relative;
+  border: 1px solid blue;
   & p {
     margin-right: 0.938rem;
     margin-left: 0.938rem;
