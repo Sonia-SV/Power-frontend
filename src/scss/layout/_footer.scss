@@ -5,14 +5,16 @@
   font-size: 14px;
   font-family: $primary-font;
   border-top: 1px solid $secondary-text-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 
-  &__tablet__copy p {
-    color: $secondary-text-color;
-    padding-top: 1.25rem;
+  &__tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &__copy p {
+      color: $secondary-text-color;
+      padding-top: 1.25rem;
+    }
   }
 
   & li {
