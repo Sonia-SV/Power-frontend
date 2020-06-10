@@ -1,7 +1,13 @@
 /* HERO */
 
-.hero {
-  height: 300px !important;
+.contactHero {
+  height: 18.75rem !important;
+
+  @include desktop {
+    .contactHero {
+      height: 25rem;
+    }
+  }
 }
 
 /* SECTION: CONTACT */
@@ -89,7 +95,7 @@
   }
 }
 @include desktop {
-  .hero {
+  .contactHero {
     height: 400px !important;
   }
   .contact {

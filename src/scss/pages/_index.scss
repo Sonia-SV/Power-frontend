@@ -8,11 +8,10 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  padding-top: 4.375rem;
+  padding-top: 6.5rem;
 }
 
 .team {
-  background-color: $light-color;
   position: relative;
   & p {
     margin-right: 0.938rem;
@@ -27,7 +26,7 @@
     flex-direction: row;
     height: 80px;
     width: auto;
-    background-color: $light-color;
+    background-color: transparentize($light-color, 0);
     position: absolute;
     left: 50%;
     top: 0;
@@ -44,18 +43,20 @@
   &__claim {
     font-family: $primary-font-bold;
     font-size: 1.125rem;
-    background-color: $light-color;
     margin: 0.875rem 0.9375rem 1rem 0.875rem;
     line-height: 2rem;
   }
 }
 @include tablet {
+  #team {
+    padding-top: 4.375rem;
+  }
   .team__div {
     bottom: 0;
     left: 0;
     transform: translate(0%, -100%);
     width: auto;
-    opacity: 0.8;
+    background-color: transparentize($light-color, 0.2);
     margin-left: 2.813rem;
   }
 }
@@ -71,6 +72,7 @@
   margin-top: 25px;
   padding-bottom: 25px;
   position: relative;
+  margin-bottom: -7rem;
 
   & .wrapper {
     display: flex;
@@ -139,10 +141,14 @@
     color: $main-color;
   }
 
-  .team__virtues .wrapper {
-    flex-direction: row;
-    justify-content: center;
+  .team__virtues {
+    margin-bottom: -4.375rem;
+    & .wrapper {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
+
   .caja {
     width: 50%;
   }
@@ -158,6 +164,7 @@
   color: $main-color;
   margin-top: 1.875rem;
   margin-bottom: 0.938rem;
+  padding-top: 7rem;
 }
 
 .aboutUs {
@@ -193,7 +200,7 @@
     max-width: 180px;
     box-sizing: content-box;
     filter: grayscale(70%);
-    transition: color ease 1s;
+    transition: filter ease 1s;
     &:hover {
       filter: grayscale(0);
     }
@@ -266,6 +273,9 @@
 /* TEAM MEMBERS */
 
 @include tablet {
+  #aboutUs {
+    padding-top: 4.375rem;
+  }
   .aboutUs__teamplayer {
     &__pic img {
       max-width: 206px;
