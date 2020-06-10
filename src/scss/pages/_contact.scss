@@ -1,14 +1,7 @@
 /* HERO */
 
 .hero {
-  height: 26.31rem;
-  background-image: url("../images/power_ranger.png");
-  background-size: cover;
-  background-position: center;
-  background-color: $background-color;
-  background-repeat: no-repeat;
-  z-index: 3;
-  width: 100%;
+  height: 300px !important;
 }
 
 /* SECTION: CONTACT */
@@ -48,6 +41,7 @@
     flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 60px;
     justify-content: flex-start;
 
     & label:not(:nth-child(3))::after {
@@ -56,27 +50,69 @@
       font-size: 0.75rem;
     }
     & input {
-      color: $secondary-text-color;
       height: 45px;
       border: solid 1px $secondary-text-color;
       margin-top: 5px;
       margin-bottom: 15px;
+      padding-left: 7px;
     }
     & div {
       display: flex;
       flex-direction: column;
     }
-    & input:nth-child(5) {
-      height: 105px;
+    &__message {
+      height: 105px !important;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      resize: none;
+      padding-top: 5px;
+      padding-left: 7px;
     }
+
     &__button {
-      margin-top: 30px;
-      margin-bottom: 60px;
       border: none !important;
       background-color: $main-color;
       border-radius: 4px;
       color: $light-color !important;
       text-transform: uppercase;
+    }
+  }
+}
+@include tablet {
+  .contact {
+    max-width: 442px;
+    &__form__button {
+      width: 206px;
+      align-self: flex-end;
+    }
+  }
+}
+@include desktop {
+  .hero {
+    height: 400px !important;
+  }
+  .contact {
+    max-width: 601px;
+    margin-bottom: 120px;
+    &__form {
+      & div {
+        flex-direction: row;
+        justify-content: space-between;
+        & div {
+          display: flex;
+          flex-direction: column;
+        }
+        & .contact__form__messagebox input {
+          width: 395px;
+        }
+        & .contact__form__tlfbox input {
+          width: 162px;
+        }
+      }
+      &__button {
+        width: 206px;
+        align-self: flex-end;
+      }
     }
   }
 }
