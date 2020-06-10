@@ -54,6 +54,8 @@
     &__menuItems {
       background-color: transparent;
       height: auto;
+      max-width: 40%;
+      justify-content: space-between;
       margin-right: 2.813rem;
     }
   }
@@ -65,7 +67,5 @@
   }
   .header__menuItems {
     margin-right: 0;
-    max-width: 40%;
-    justify-content: space-between;
   }
 }
