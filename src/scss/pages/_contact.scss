@@ -37,7 +37,6 @@
       & span:first-child::after {
         content: "*";
         color: $secondary-color;
-        font-size: 0.75rem;
       }
     }
   }
@@ -50,10 +49,13 @@
     margin-bottom: 60px;
     justify-content: flex-start;
 
-    & label:not(:nth-child(3))::after {
+    & label:after {
       content: " *";
       color: $secondary-color;
       font-size: 0.75rem;
+    }
+    &__tlfbox label:after {
+      content: none;
     }
     & input {
       height: 45px;
