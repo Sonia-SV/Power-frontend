@@ -31,7 +31,7 @@
     </header>
 
     <section class="hero"></section>
-    <section class="contact">
+    <section class="contact wrapper">
       <div class="contact__summary">
         <h1>contacto</h1>
         <p class="contact__summary__description">
@@ -52,25 +52,29 @@
         <label for="name">Nombre completo</label>
         <input placeholder="Nombre..." type="text" name="name" required />
         <div>
-          <label for="mail">Email</label>
-          <input
-            placeholder=" nombre.apellidos@mail.com"
-            type="mail"
-            name="mail"
-            required
-          />
-
-          <label for="tlf">Teléfono</label>
-          <input placeholder=" Ej: 123456789" type="number" name="tlf" />
+          <div class="contact__form__messagebox">
+            <label for="mail">Email</label>
+            <input
+              placeholder=" nombre.apellidos@mail.com"
+              type="mail"
+              name="mail"
+              required
+            />
+          </div>
+          <div class="contact__form__tlfbox">
+            <label for="tlf">Teléfono</label>
+            <input placeholder=" Ej: 123456789" type="number" name="tlf" />
+          </div>
         </div>
         <label for="message">Mensaje</label>
 
-        <input
+        <textarea
           placeholder="¿Qué necesitas?"
           type="text"
           name="message"
+          class="contact__form__message"
           required
-        />
+        ></textarea>
         <input class="contact__form__button" type="submit" value="enviar" />
       </form>
     </section>
