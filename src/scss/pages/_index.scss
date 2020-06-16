@@ -193,16 +193,21 @@
     margin-left: 0.938rem;
   }
 
-  &__pic img {
-    display: block;
-    border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-    max-width: 180px;
-    box-sizing: content-box;
-    filter: grayscale(70%);
-    transition: filter ease 1s;
-    &:hover {
-      filter: grayscale(0);
+  &__pic {
+    border: solid 5px #d9d9d9;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    img {
+      display: block;
+      border-radius: 4px;
+
+      max-width: 180px;
+      box-sizing: content-box;
+      filter: grayscale(70%);
+      transition: filter ease 1s;
+      &:hover {
+        filter: grayscale(0);
+      }
     }
   }
 

@@ -20,6 +20,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+      width: 200px;
+
+      img {
+        width: 100%;
+        &:hover {
+          animation-duration: 0.8s;
+          animation-name: rotate;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+        }
+      }
+    }
   }
   &__menuItems {
     background-color: transparentize($secondary-color, 0.1);
@@ -31,6 +44,17 @@
     align-items: center;
     & li {
       display: inline-block;
+      transition-property: color;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+      & a {
+        &:hover {
+          transition-property: color;
+          transition-duration: 0.15s;
+          transition-timing-function: ease;
+          color: $main-text-color;
+        }
+      }
     }
   }
 }
@@ -65,5 +89,15 @@
   }
   .header__menuItems {
     margin-right: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

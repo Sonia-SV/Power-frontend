@@ -84,6 +84,32 @@
       border-radius: 4px;
       color: $light-color !important;
       text-transform: uppercase;
+
+      &:hover {
+        animation: bounce 0.8s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(-10%) translateX(0%);
+        }
+        30% {
+          transform: translateY(-20%) translateX(0%);
+        }
+
+        50% {
+          transform: translateY(-25%) translateX(0%);
+        }
+
+        75% {
+          transform: translateY(-20%) translateX(0%);
+        }
+        100% {
+          transform: translateY(-10%) translateX(0%);
+        }
+      }
     }
   }
 }

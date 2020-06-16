@@ -29,6 +29,22 @@
   }
   &__box__menu {
     grid-area: menu;
+
+    & ul {
+      & li {
+        transition-property: color;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        & a {
+          &:hover {
+            transition-property: color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            color: $main-color;
+          }
+        }
+      }
+    }
   }
 
   &__box__logo {
