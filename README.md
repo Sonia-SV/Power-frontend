@@ -1,11 +1,15 @@
-# Adalab-Project-1
-Web grupal. En este proyecto vamos a desarrollar nuestra primera web colaborativa. Para ello crearemos una web con la información social de todos los miembros del equipo.
+## Power FrontEnd
+First group web made in Adalab. HTML & CSS/SASS
 
-Miembros en orden alfabético:
+### Project team:
 
-* Ana Maria Caruntu
-* Lucía Martínez
-* Sonia Sanz Vivas
-* Marta Soler
-* Miriam Suárez
+Sonia Sanz Vivas [🔗](https://github.com/Sonia-SV)
+
+Ana Maria Caruntu [🔗](https://github.com/anamcaruntu)
+
+Lucía Martínez [🔗](https://github.com/lucimart)
+
+Marta Soler [🔗](https://github.com/martaluciasoler)
+
+Miriam Suárez [🔗](https://github.com/miriamschaefer)
 
